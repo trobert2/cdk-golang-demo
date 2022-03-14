@@ -26,7 +26,7 @@ jobs:
     - name: Copy files to the test website with the AWS CLI
       run: echo "set version complete"
     - name: Copy files to the test website with the AWS CLI
-      run: exit 1
+      run: echo "set finished"
       
   deploy:
     name: deploy
