@@ -29,7 +29,7 @@ jobs:
   deploy:
     name: deploy
     runs-on: ubuntu-latest
-    if: needs.set.result == 'success' or needs.set.result == 'skipped'
+    if: needs.set.result == 'success' || needs.set.result == 'skipped'
     steps:
     - name: Copy files to the test website with the AWS CLI
       run: echo "deploy complete"
