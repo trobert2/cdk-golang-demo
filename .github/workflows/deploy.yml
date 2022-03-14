@@ -25,7 +25,9 @@ jobs:
     steps:
     - name: Copy files to the test website with the AWS CLI
       run: echo "set version complete"
-  
+    - name: Copy files to the test website with the AWS CLI
+      run: exit 1
+      
   deploy:
     name: deploy
     runs-on: ubuntu-latest
